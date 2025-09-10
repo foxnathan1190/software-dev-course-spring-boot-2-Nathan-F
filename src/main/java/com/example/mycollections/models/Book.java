@@ -25,4 +25,9 @@ public class Book extends LibraryItem {
     public void setPages(int pages) {
         this.pages = pages;
     }
+
+    @Override
+    public String toString() {
+        return getName() + " by " + author + " (" + getYear() + ") – " + pages + " pages";
+    }
 }
